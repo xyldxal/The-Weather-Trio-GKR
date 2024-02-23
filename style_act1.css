@@ -1,0 +1,198 @@
+
+    body{
+        background-image: linear-gradient(#301934, #6F8FAF);
+    }
+    .container {
+        display: flex;
+    }
+
+    .column {
+        flex: 1;
+        padding: 20px;
+        border: 1px outset #301934;
+    }
+
+    #c1 {
+        background-image: linear-gradient(darkblue, lightblue);
+    }
+
+    #c2 {
+        background-image: linear-gradient(darkgreen, lightgreen);
+    }
+
+    #c3 {
+        background-image: linear-gradient(darkred, #FA5F55);
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ccc;
+        text-shadow: 2px 2px #000000;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    h4 {
+        line-height: 0.5;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    #link1 {
+        color: #ffff;
+        font-size: 50px;
+        text-decoration: none;
+        text-shadow: 2px 2px #301934;
+    }
+
+    #link1:hover{
+        color: blue;
+        text-decoration: underline;
+    }
+
+    #link2 {
+        color: #ffff;
+        font-size: 50px;
+        text-decoration: none;
+        text-shadow: 2px 2px #301934;
+    }
+
+    #link2:hover{
+        color: #7CFC00;
+        text-decoration: underline;
+    }
+
+    #link3 {
+        color: #ffff;
+        font-size: 50px;
+        text-decoration: none;
+        text-shadow: 2px 2px #301934;
+    }
+
+    #link3:hover{
+        color: red;
+        text-decoration: underline;
+    }
+
+    ul {
+        list-style-type: square;
+    }
+
+    #types {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    #block1 {
+        display: inline-block;
+        margin: 0 auto;
+
+        text-align: center;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        width: 100px;
+        line-height: 25px;
+        border-radius: 3px;
+    }
+
+    #block2 {
+        display: inline-block;
+        margin-left: 5px;
+
+        text-align: center;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        width: 100px;
+        line-height: 25px;
+        border-radius: 3px;
+    }
+
+    #pokedex{
+        line-height: 0.5;
+    }
+    #entry {
+        background-color: #fff;
+        font-size: 15px;
+        line-height: 1.5;
+        border-radius: 3px;
+        padding: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #feedback {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #form {
+        border-radius: 4px;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px ;
+    }
+
+    #submit1 {
+        width: 100px;
+        background-color: 	#6F8FAF;
+        color: #000000;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #submit1:hover{
+        background-color:#000080;
+        color: white;
+    }
+
+    #submit2 {
+        width: 100px;
+        background-color: #50C878;
+        color: #000000;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #submit2:hover{
+        background-color:	#355E3B;
+        color: white;
+    }
+
+    #submit3 {
+        width: 100px;
+        background-color: 	#F88379;
+        color: #000000;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #submit3:hover{
+        background-color:#800000;
+        color: white;
+    }
+    .gifs {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+        height: 350px;
+    }
+
+    footer{
+        text-align: center;
+        padding: 5px;
+        color: #575757;
+    }
+
