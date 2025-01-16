@@ -88,7 +88,7 @@
         padding: 20px;
     }
     
-    #block1 {
+    .block1 {
         display: inline-block;
         margin: 0 auto;
 
@@ -101,41 +101,32 @@
         border-radius: 3px;
     }
 
-    #block2 {
+    .block2 {
         display: inline-block;
-        margin-left: 5px;
-
         text-align: center;
         color: #fff;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
         width: 100px;
         line-height: 25px;
-        border-radius: 3px;
+        border: #575757;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 1px 1px 1px darkgray;
     }
 
-    #pokedex{
-        line-height: 0.5;
-    }
-    #entry {
-        background-color: #fff;
-        font-size: 15px;
-        line-height: 1.5;
-        border-radius: 3px;
-        padding: 4px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    #feedback {
+    .pokedex{
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
+        line-height: 0.5;
     }
 
     #form {
         border-radius: 4px;
-        line-height: 1.5;
+        line-height: 1.0;
         font-family: Arial, Helvetica, sans-serif;
-        padding: 20px ;
+        padding: 10px ;
+        text-align: center;
+        padding-bottom: 20px;
     }
 
     #submit1 {
@@ -186,7 +177,6 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 350px;
         height: 350px;
     }
 
@@ -195,4 +185,92 @@
         padding: 5px;
         color: #575757;
     }
+
+/* additions to activity 2 */
+    .spriteselect {
+        text-align: center;
+        padding: 1.5px;
+    }
+    .spritebutton {
+        text-align: center;
+        background-color: grey;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        width: 75px;
+        line-height: 18px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .entrypanel {
+        text-align: center;
+        background-color: gainsboro;
+        font-size: 15px;
+        line-height: 1.5;
+        border-radius: 3px;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #feedback1 {
+        text-align: center;
+        margin-left: 5px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #feedback2 {
+        text-align: center;
+        margin-left: 5px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #kyfeedback {
+        width: 100px;
+        background-color: 	#6F8FAF;
+        color: #000000;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #kyfeedback:hover {
+        background-color:#000080;
+        color: white;
+    }
+
+    #rqfeedback {
+        width: 100px;
+        background-color: #50C878;
+        color: #000000;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #rqfeedback:hover {
+        background-color:	#355E3B;
+        color: white;
+    }
+
+    #grfeedback {
+        width: 100px;
+        background-color: 	#F88379;
+        color: #000000;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #grfeedback:hover {
+        background-color:	#355E3B;
+        color: white;
+    }
+
+
 

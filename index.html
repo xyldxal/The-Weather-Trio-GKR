@@ -6,6 +6,8 @@
             The Weather Trio
         </title>
         <link rel="stylesheet" href="style_act1.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script_act2.js"> </script>
     </head>
     
     <body>
@@ -13,45 +15,114 @@
         <div class="container">
             <div class = "column" id="c1"> 
                 <h2> <a href="https://bulbapedia.bulbagarden.net/wiki/Kyogre_(Pok%C3%A9mon)"  id="link1">Kyogre</a></h2>
-                <img src="https://archives.bulbagarden.net/media/upload/1/10/Spr_5b_382.png" class="gifs">
+                <img src="https://archives.bulbagarden.net/media/upload/1/10/Spr_5b_382.png" class="gifs" id="ky_sprite">
+
+                <div class="spriteselect">
+                    <button class="spritebutton" id="ky_orig">Original</button>
+                    <button class="spritebutton" id="ky_shiny">Shiny</button>
+                </div>
 
                 <div id="types">
                     <h2>Type</h2>
-                    <h3 id="block1" style="background-color: #6980f0;">Water</h3>
+                    <h3 class="block1" style="background-color: #6980f0;">Water</h3>
                 </div>
 
-                <div id="pokedex">
+                <div class="pokedex">
                     <h2>Pokédex Entries</h2>
-                    <ul>
-                        <li>
-                            <h3 id="block2" style="background-color: #a00000;">Ruby</h3> <br>
-                            <p id="entry"> Kyogre has the power to create massive rain clouds that cover the entire sky
-                                and bring about torrential downpours. This Pokémon saved people who were
-                                suffering from droughts. </p>
-                        </li>
-                        <li> 
-                            <h3 id="block2" style="background-color: #0000a0;">Sapphire</h3> <br>
-                            <p id="entry">Kyogre is named in mythology as the Pokémon that expanded the sea by covering the
-                                land with torrential rains and towering tidal waves. It took to sleep after a
-                                cataclysmic battle with Groudon.</p>
-                        </li>
-                        <li> 
-                            <h3 id="block2" style="background-color: #00a000;">Emerald</h3> <br>
-                            <p id="entry">Kyogre has appeared in mythology as the creator of the sea. After long years of
-                                feuding with Groudon, it took to sleep at the bottom of the sea.</p>
-                        </li>
-                        <li> 
-                            <h3 id="block2" style="background-color: #ff7327;">Fire Red</h3> <h3 id="block2" style="background-color: #00dd00;">Leaf Green</h3><br>
-                            <p id="entry">	This Pokémon is said to have expanded the sea by bringing heavy rains. It has the
-                                power to control water.</p>
-                        </li>
-                    </ul>
+                    <div class="entrypanel" id="kentrypanel">
+                        <p id="kselect">Select a core series game.</p>
+                        <p class=kentry id="kruben">
+                            Kyogre has the power to create massive rain clouds that cover the entire sky and bring about torrential downpours.
+                            This Pokémon saved people who were suffering from droughts.
+                        </p>
+                        <p class=kentry id="ksapen">
+                            Kyogre is named in mythology as the Pokémon that expanded the sea by covering the land with torrential rains
+                            and towering tidal waves. It took to sleep after a cataclysmic battle with Groudon.
+                        </p> 
+                        <p class=kentry id="kemeen">
+                            Kyogre has appeared in mythology as the creator of the sea. After long years of feuding with Groudon, it
+                            took to sleep at the bottom of the sea.
+                        </p> 
+                        <p class=kentry id="kfren">
+                            This Pokémon is said to have expanded the sea by bringing heavy rains. It has the power to control water.
+                        </p> 
+                        <p class=kentry id="klgen">
+                            This Pokémon is said to have expanded the sea by bringing heavy rains. It has the power to control water.
+                        </p> 
+                        <p class=kentry id="kdiaen">
+                            It is said to have widened the seas by causing downpours. It had been asleep in a marine trench.
+                        </p> 
+                        <p class=kentry id="kprlen">
+                            It is said to have widened the seas by causing downpours. It had been asleep in a marine trench.
+                        </p> 
+                        <p class=kentry id="kplten">
+                            It is said to have widened the seas by causing downpours. It had been asleep in a marine trench.
+                        </p> 
+                        <p class=kentry id="khgen">
+                            A mythical Pokémon said to have swelled the seas with rain and tidal waves. It battled with Groudon.
+                        </p> 
+                        <p class=kentry id="kssen">
+                            A mythical Pokémon said to have swelled the seas with rain and tidal waves. It battled with Groudon.
+                        </p> 
+                        <p class=kentry id="kblken">
+                            It is said to have widened the seas by causing downpours. It had been asleep in a marine trench.
+                        </p> 
+                        <p class=kentry id="kwhten">
+                            It is said to have widened the seas by causing downpours. It had been asleep in a marine trench.
+                        </p> 
+                        <p class=kentry id="kblk2en">
+                            It is said to have widened the seas by causing downpours. It had been asleep in a marine trench.
+                        </p>
+                        <p class=kentry id="kwht2en">
+                            It is said to have widened the seas by causing downpours. It had been asleep in a marine trench.
+                        </p> 
+                        <p class=kentry id="kxen">
+                            A mythical Pokémon said to have swelled the seas with rain and tidal waves. It battled with Groudon.
+                        </p> 
+                        <p class=kentry id="kyen">
+                            It is said to have widened the seas by causing downpours. It had been asleep in a marine trench.
+                        </p> 
+                        <p class=kentry id="koren">
+                            Through Primal Reversion and with nature's full power, it will take back its true form. It can
+                            summon storms that cause the sea levels to rise.
+                        </p>
+                        <p class=kentry id="kasen">
+                            Kyogre is said to be the personification of the sea itself. Legends tell of its many clashes
+                            against Groudon, as each sought to gain the power of nature.
+                        </p>  
+                    </div> <br>
+                    <h3 class="block2" id="ky_rub" style="background-color: #a00000;">Ruby</h3>
+                    <h3 class="block2" id="ky_sap" style="background-color: #0000a0;">Sapphire</h3>
+                    <h3 class="block2" id="ky_eme" style="background-color: #00a000;">Emerald</h3>
+                    <h3 class="block2" id="ky_fr" style="background-color: #ff7327; color: black;">Fire Red</h3>
+                    <h3 class="block2" id="ky_lg" style="background-color: #00dd00; color: black;">Leaf Green</h3>
+                    <br>
+
+                    <h3 class="block2" id="ky_dia" style="background-color: #aaaaff; color: black;">Diamond</h3>
+                    <h3 class="block2" id="ky_prl" style="background-color: #ffaaaa; color: black;">Pearl</h3>
+                    <h3 class="block2" id="ky_plt" style="background-color: #999999; color: black;">Platinum</h3>
+                    <h3 class="block2" id="ky_hg" style="background-color: #b69e00; color: black;">Heart Gold</h3>
+                    <h3 class="block2" id="ky_ss" style="background-color: #c0c0e1; color: black;">Soul Silver</h3>
+                    <br>
+
+                    <h3 class="block2" id="ky_blk" style="background-color: #444444;">Black</h3>
+                    <h3 class="block2" id="ky_wht" style="background-color: #e1e1e1; color: black;">White</h3>
+                    <h3 class="block2" id="ky_blk2" style="background-color: #424b50;">Black 2</h3>
+                    <h3 class="block2" id="ky_wht2" style="background-color: #e3ced0; color: black;">White 2</h3>
+                    <br>
+
+                    <h3 class="block2" id="ky_x" style="background-color: #025da6;">X</h3>
+                    <h3 class="block2" id="ky_y" style="background-color: #ea1a3e; color: black;">Y</h3>
+                    <h3 class="block2" id="ky_or" style="background-color: #ab2813;">O. Ruby</h3>
+                    <h3 class="block2" id="ky_as" style="background-color: #26649c;">A. Sapphire</h3>
+                    <br>
                 </div>
 
                 <div id="form" style="background-color: royalblue;">
-                    <h3 id="feedback">Did you catch Kyogre?</h3>
-                    <h4>Tell us about it!</h4>
-                    <form>
+                    <h3 id="feedback1">Did you catch Kyogre?</h3>
+                    <h4 id="feedback2">Tell us about it!</h4>
+                    <button id="kyfeedback">Click here</button>
+                    <form id="kyform">
                         <label for="nickname">Nickname: </label> <br>
                         <input type="text" name="nickname" placeholder="Kyogre" id="nickname">
                         
@@ -79,45 +150,115 @@
 
             <div class = "column" id="c2"> 
                 <h2> <a href="https://bulbapedia.bulbagarden.net/wiki/Rayquaza_(Pok%C3%A9mon)" id="link2">Rayquaza</a></h2>
-                <img src="https://archives.bulbagarden.net/media/upload/5/55/Spr_5b_384.png" class="gifs">
-                <div id="types">
-                    <h2>Types</h2>
-                    <h3 id="block1" style="background-color: #7030f8;">Dragon</h3>
-                    <h3 id="block1" style="background-color: #a890f0;">Flying</h3>
+                <img src="https://archives.bulbagarden.net/media/upload/5/55/Spr_5b_384.png" class="gifs" id="rq_sprite">
+
+                <div class="spriteselect">
+                    <button class="spritebutton" id="rq_orig">Original</button>
+                    <button class ="spritebutton" id="rq_shiny">Shiny</button>
                 </div>
 
-                <div id="pokedex">
-                    <h2>Pokédex Entries</h2>
-                    <ul>
-                        <li>
-                            <h3 id="block2" style="background-color: #a00000;">Ruby</h3> <br>
-                            <p id="entry"> Rayquaza lived for hundreds of millions of years in the earth's ozone layer, never
-                            descending to the ground. This Pokémon appears to feed on water and particles in the
-                            atmosphere. </p>
+                <div id="types">
+                    <h2>Types</h2>
+                    <h3 class="block1" style="background-color: #7030f8;">Dragon</h3>
+                    <h3 class="block1" style="background-color: #a890f0;">Flying</h3>
+                </div>
 
-                        </li>
-                        <li> 
-                            <h3 id="block2" style="background-color: #0000a0;">Sapphire</h3> <br>
-                            <p id="entry">Rayquaza is said to have lived for hundreds of millions of years in the earth's ozone layer,
-                            above the clouds. Its existence had been completely unknown because it lived so high in the sky.</p>
-                        </li>
-                        <li> 
-                            <h3 id="block2" style="background-color: #00a000;">Emerald</h3> <br>
-                            <p id="entry">A Pokémon that flies endlessly in the ozone layer. It is said it would descend to the ground
-                            if Kyogre and Groudon were to fight.</p>
-                        </li>
-                        <li> 
-                            <h3 id="block2" style="background-color: #ff7327;">Fire Red</h3> <h3 id="block2" style="background-color: #00dd00;">Leaf Green</h3><br>
-                            <p id="entry">	It has lived for hundreds of millions of years in the ozone layer. Its flying form looks
-                                like a meteor.</p>
-                        </li>
-                    </ul>
+                <div class="pokedex">
+                    <h2>Pokédex Entries</h2>
+                    <div class="entrypanel" id="rentrypanel">
+                        <p id="rselect">Select a core series game.</p>
+                        <p class=rentry id="rruben">
+                            Rayquaza lived for hundreds of millions of years in the earth's ozone layer, never descending to the ground.
+                            This Pokémon appears to feed on water and particles in the atmosphere.
+                        </p>
+                        <p class=rentry id="rsapen">
+                            Rayquaza is said to have lived for hundreds of millions of years in the earth's ozone layer, above the clouds.
+                            Its existence had been completely unknown because it lived so high in the sky.
+                        </p> 
+                        <p class=rentry id="remeen">
+                            A Pokémon that flies endlessly in the ozone layer. It is said it would descend to the ground
+                            if Kyogre and Groudon were to fight.
+                        </p> 
+                        <p class=rentry id="rfren">
+                            It has lived for hundreds of millions of years in the ozone layer. Its flying form looks like a meteor.
+                        </p> 
+                        <p class=rentry id="rlgen">
+                            It has lived for hundreds of millions of years in the ozone layer. Its flying form looks like a meteor.
+                        </p> 
+                        <p class=rentry id="rdiaen">
+                            It cannot be seen from ground level since it lives far up above the clouds in the ozone layer.
+                        </p> 
+                        <p class=rentry id="rprlen">
+                            It cannot be seen from ground level since it lives far up above the clouds in the ozone layer.
+                        </p> 
+                        <p class=rentry id="rplten">
+                            It cannot be seen from ground level since it lives far up above the clouds in the ozone layer.
+                        </p> 
+                        <p class=rentry id="rhgen">
+                            It flies in the ozone layer, way up high in the sky. Until recently, no one had ever seen it.
+                        </p> 
+                        <p class=rentry id="rssen">
+                            It flies in the ozone layer, way up high in the sky. Until recently, no one had ever seen it.
+                        </p> 
+                        <p class=rentry id="rblken">
+                            It lives in the ozone layer far above the clouds and cannot be seen from the ground.
+                        </p> 
+                        <p class=rentry id="rwhten">
+                            It lives in the ozone layer far above the clouds and cannot be seen from the ground.
+                        </p> 
+                        <p class=rentry id="rblk2en">
+                            It lives in the ozone layer far above the clouds and cannot be seen from the ground.
+                        </p>
+                        <p class=rentry id="rwht2en">
+                            It lives in the ozone layer far above the clouds and cannot be seen from the ground.
+                        </p> 
+                        <p class=rentry id="rxen">
+                            It lives in the ozone layer far above the clouds and cannot be seen from the ground.
+                        </p> 
+                        <p class=rentry id="ryen">
+                            It flies in the ozone layer, way up high in the sky. Until recently, no one had ever seen it.
+                        </p> 
+                        <p class=rentry id="roren">
+                            Rayquaza is said to have lived for hundreds of millions of years. Legends remain of how
+                            it put to rest the clash between Kyogre and Groudon.
+                        </p>
+                        <p class=rentry id="rasen">
+                            It flies forever through the ozone layer, consuming meteoroids for sustenance. The many
+                            meteoroids in its body provide the energy it needs to Mega Evolve.
+                        </p>  
+                    </div> <br>
+                    <h3 class="block2" id="rq_rub" style="background-color: #a00000;">Ruby</h3>
+                    <h3 class="block2" id="rq_sap" style="background-color: #0000a0;">Sapphire</h3>
+                    <h3 class="block2" id="rq_eme" style="background-color: #00a000;">Emerald</h3>
+                    <h3 class="block2" id="rq_fr" style="background-color: #ff7327; color: black;">Fire Red</h3>
+                    <h3 class="block2" id="rq_lg" style="background-color: #00dd00; color: black;">Leaf Green</h3>
+                    <br>
+
+                    <h3 class="block2" id="rq_dia" style="background-color: #aaaaff; color: black;">Diamond</h3>
+                    <h3 class="block2" id="rq_prl" style="background-color: #ffaaaa; color: black;">Pearl</h3>
+                    <h3 class="block2" id="rq_plt" style="background-color: #999999; color: black;">Platinum</h3>
+                    <h3 class="block2" id="rq_hg" style="background-color: #b69e00; color: black;">Heart Gold</h3>
+                    <h3 class="block2" id="rq_ss" style="background-color: #c0c0e1; color: black;">Soul Silver</h3>
+                    <br>
+
+                    <h3 class="block2" id="rq_blk" style="background-color: #444444;">Black</h3>
+                    <h3 class="block2" id="rq_wht" style="background-color: #e1e1e1; color: black;">White</h3>
+                    <h3 class="block2" id="rq_blk2" style="background-color: #424b50;">Black 2</h3>
+                    <h3 class="block2" id="rq_wht2" style="background-color: #e3ced0; color: black;">White 2</h3>
+                    <br>
+
+                    <h3 class="block2" id="rq_x" style="background-color: #025da6;">X</h3>
+                    <h3 class="block2" id="rq_y" style="background-color: #ea1a3e; color: black;">Y</h3>
+                    <h3 class="block2" id="rq_or" style="background-color: #ab2813;">O. Ruby</h3>
+                    <h3 class="block2" id="rq_as" style="background-color: #26649c;">A. Sapphire</h3>
+
                 </div>
 
                 <div id="form" style="background-color: #40826D;">
-                    <h3 id="feedback">Did you catch Rayquaza?</h3>
-                    <h4>Tell us about it!</h4>
-                    <form>
+                    <h3 id="feedback1">Did you catch Rayquaza?</h3>
+                    <h4 id="feedback2">Tell us about it!</h4>
+                    <button id="rqfeedback">Click here</button>
+                    <form id="rqform">
                         <label for="nickname">Nickname: </label> <br>
                         <input type="text" name="nickname" placeholder="Rayquaza" id="nickname">
                         
@@ -145,44 +286,115 @@
 
             <div class = "column" id="c3">
                 <h2><a href="https://bulbapedia.bulbagarden.net/wiki/Groudon_(Pok%C3%A9mon)" id="link3">Groudon</a></h2>
-                <img src="https://archives.bulbagarden.net/media/upload/e/ed/Spr_5b_383.png" class="gifs">
+                <img src="https://archives.bulbagarden.net/media/upload/e/ed/Spr_5b_383.png" class="gifs" id="gr_sprite">
+
+                <div class="spriteselect">
+                    <button class="spritebutton" id="gr_orig">Original</button>
+                    <button class="spritebutton" id="gr_shiny">Shiny</button>
+                </div>
 
                 <div id="types">
                     <h2>Type</h2>
-                    <h3 id="block1" style="background-color: #e0c068;"> Ground</h3> 
+                    <h3 class="block1" style="background-color: #e0c068;"> Ground</h3> 
                 </div>
 
-                <div id="pokedex">
+                <div class="pokedex">
                     <h2>Pokédex Entries</h2>
-                    <ul>
-                        <li>
-                            <h3 id="block2" style="background-color: #a00000;">Ruby</h3> <br>
-                            <p id="entry"> Groudon has long been described in mythology as the Pokémon that raised lands and expanded
-                                continents. This Pokémon took to sleep after a cataclysmic battle with Kyogre. </p>
+                    <div class="entrypanel" id="gentrypanel">
+                        <p id="gselect">Select a core series game.</p>
+                        <p class=gentry id="gruben">
+                            Groudon has long been described in mythology as the Pokémon that raised lands and expanded continents.
+                            This Pokémon took to sleep after a cataclysmic battle with Kyogre.
+                        </p>
+                        <p class=gentry id="gsapen">
+                            Groudon has the power to scatter rain clouds and make water evaporate with light and heat. It
+                            came as a savior to people who had been suffering from terrible floods.
+                        </p> 
+                        <p class=gentry id="gemeen">
+                            Groudon has appeared in mythology as the creator of the land. It sleeps in magma underground and is said
+                            to make volcanoes erupt on awakening.
+                        </p> 
+                        <p class=gentry id="gfren">
+                            This legendary Pokémon is said to represent the land. It went to sleep after dueling Kyogre.
+                        </p> 
+                        <p class=gentry id="glgen">
+                            This legendary Pokémon is said to represent the land. It went to sleep after dueling Kyogre.
+                        </p> 
+                        <p class=gentry id="gdiaen">
+                            It had been asleep in underground magma ever since it fiercely fought Kyogre long ago.
+                        </p> 
+                        <p class=gentry id="gprlen">
+                            It had been asleep in underground magma ever since it fiercely fought Kyogre long ago.
+                        </p> 
+                        <p class=gentry id="gplten">
+                            It had been asleep in underground magma ever since it fiercely fought Kyogre long ago.
+                        </p> 
+                        <p class=gentry id="ghgen">
+                            Said to have expanded the lands by evaporating water with raging heat. It battled titanically with Kyogre.
+                        </p> 
+                        <p class=gentry id="gssen">
+                            Said to have expanded the lands by evaporating water with raging heat. It battled titanically with Kyogre.
+                        </p> 
+                        <p class=gentry id="gblken">
+                            It had been asleep in underground magma ever since it fiercely fought Kyogre long ago.
+                        </p> 
+                        <p class=gentry id="gwhten">
+                            It had been asleep in underground magma ever since it fiercely fought Kyogre long ago.
+                        </p> 
+                        <p class=gentry id="gblk2en">
+                            It had been asleep in underground magma ever since it fiercely fought Kyogre long ago.
+                        </p>
+                        <p class=gentry id="gwht2en">
+                            It had been asleep in underground magma ever since it fiercely fought Kyogre long ago.
+                        </p> 
+                        <p class=gentry id="gxen">
+                            Said to have expanded the lands by evaporating water with raging heat. It battled titanically with Kyogre.
+                        </p> 
+                        <p class=gentry id="gyen">
+                            This legendary Pokémon is said to represent the land. It went to sleep after dueling Kyogre.
+                        </p> 
+                        <p class=gentry id="goren">
+                            Groudon is said to be the personification of the land itself. Legends tell of its many clashes
+                            against Kyogre, as each sought to gain the power of nature.
+                        </p>
+                        <p class=gentry id="gasen">
+                            Through Primal Reversion and with nature's full power, it will take back its true form. It can
+                            cause magma to erupt and expand the landmass of the world.
+                        </p>  
+                    </div> <br>
+                    <h3 class="block2" id="gr_rub" style="background-color: #a00000;">Ruby</h3>
+                    <h3 class="block2" id="gr_sap" style="background-color: #0000a0;">Sapphire</h3>
+                    <h3 class="block2" id="gr_eme" style="background-color: #00a000;">Emerald</h3>
+                    <h3 class="block2" id="gr_fr" style="background-color: #ff7327; color: black;">Fire Red</h3>
+                    <h3 class="block2" id="gr_lg" style="background-color: #00dd00; color: black;">Leaf Green</h3>
+                    <br>
 
-                        </li>
-                        <li> 
-                            <h3 id="block2" style="background-color: #0000a0;">Sapphire</h3> <br>
-                            <p id="entry">Groudon has the power to scatter rain clouds and make water evaporate with light and heat. 
-                                It came as a savior to people who had been suffering from terrible floods.</p>
-                        </li>
-                        <li> 
-                            <h3 id="block2" style="background-color: #00a000;">Emerald</h3> <br>
-                            <p id="entry">Groudon has appeared in mythology as the creator of the land. It sleeps in magma underground 
-                                and is said to make volcanoes erupt on awakening.</p>
-                        </li>
-                        <li> 
-                            <h3 id="block2" style="background-color: #ff7327;">Fire Red</h3> <h3 id="block2" style="background-color: #00dd00;">Leaf Green</h3><br>
-                            <p id="entry">	It has lived for hundreds of millions of years in the ozone layer. Its flying form looks
-                                like a meteor.</p>
-                        </li>
-                    </ul>
+                    <h3 class="block2" id="gr_dia" style="background-color: #aaaaff; color: black;">Diamond</h3>
+                    <h3 class="block2" id="gr_prl" style="background-color: #ffaaaa; color: black;">Pearl</h3>
+                    <h3 class="block2" id="gr_plt" style="background-color: #999999; color: black;">Platinum</h3>
+                    <h3 class="block2" id="gr_hg" style="background-color: #b69e00; color: black;">Heart Gold</h3>
+                    <h3 class="block2" id="gr_ss" style="background-color: #c0c0e1; color: black;">Soul Silver</h3>
+                    <br>
+
+                    <h3 class="block2" id="gr_blk" style="background-color: #444444;">Black</h3>
+                    <h3 class="block2" id="gr_wht" style="background-color: #e1e1e1; color: black;">White</h3>
+                    <h3 class="block2" id="gr_blk2" style="background-color: #424b50;">Black 2</h3>
+                    <h3 class="block2" id="gr_wht2" style="background-color: #e3ced0; color: black;">White 2</h3>
+                    <br>
+
+                    <h3 class="block2" id="gr_x" style="background-color: #025da6;">X</h3>
+                    <h3 class="block2" id="gr_y" style="background-color: #ea1a3e; color: black;">Y</h3>
+                    <h3 class="block2" id="gr_or" style="background-color: #ab2813;">O. Ruby</h3>
+                    <h3 class="block2" id="gr_as" style="background-color: #26649c;">A. Sapphire</h3>
+                    <br>
                 </div>
+
 
                 <div id="form" style="background-color: #E3735E;">
-                    <h3 id="feedback">Did you catch Groudon?</h3>
-                    <h4>Tell us about it!</h4>
-                    <form>
+                    <h3 id="feedback1">Did you catch Groudon?</h3>
+                    <h4 id="feedback2">Tell us about it!</h4>
+                    <button id="grfeedback">Click here</button>
+                    <form id="grform">
                         <label for="nickname">Nickname: </label> <br>
                         <input type="text" name="nickname" placeholder="Groudon" id="nickname">
 
